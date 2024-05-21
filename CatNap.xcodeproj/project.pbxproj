@@ -16,6 +16,8 @@
 		A4BEBC0B2BA7505600102901 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4BEBC0A2BA7505600102901 /* Assets.xcassets */; };
 		A4BEBC0E2BA7505600102901 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A4BEBC0D2BA7505600102901 /* Base */; };
 		A4D7304C2BA83B7D003B2F24 /* CatWakeUp.sks in Resources */ = {isa = PBXBuildFile; fileRef = A4D7304B2BA83B7D003B2F24 /* CatWakeUp.sks */; };
+		A4DE95912BFD4187009F87E1 /* BedNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DE95902BFD4187009F87E1 /* BedNode.swift */; };
+		A4DE95932BFD44F8009F87E1 /* CatNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DE95922BFD44F8009F87E1 /* CatNode.swift */; };
 		A4F7E60F2BA81B4E004518A0 /* Cat.sks in Resources */ = {isa = PBXBuildFile; fileRef = A4F7E60E2BA81B4E004518A0 /* Cat.sks */; };
 		A4F7E6162BA8333D004518A0 /* backgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4F7E6102BA8333D004518A0 /* backgroundMusic.mp3 */; };
 		A4F7E6172BA8333D004518A0 /* lose.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4F7E6112BA8333D004518A0 /* lose.mp3 */; };
@@ -36,6 +38,8 @@
 		A4BEBC0A2BA7505600102901 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4BEBC0D2BA7505600102901 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4D7304B2BA83B7D003B2F24 /* CatWakeUp.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CatWakeUp.sks; sourceTree = "<group>"; };
+		A4DE95902BFD4187009F87E1 /* BedNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedNode.swift; sourceTree = "<group>"; };
+		A4DE95922BFD44F8009F87E1 /* CatNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatNode.swift; sourceTree = "<group>"; };
 		A4F7E60E2BA81B4E004518A0 /* Cat.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Cat.sks; sourceTree = "<group>"; };
 		A4F7E6102BA8333D004518A0 /* backgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundMusic.mp3; sourceTree = "<group>"; };
 		A4F7E6112BA8333D004518A0 /* lose.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lose.mp3; sourceTree = "<group>"; };
@@ -84,6 +88,8 @@
 				A4BEBC072BA7505500102901 /* Main.storyboard */,
 				A4BEBC0A2BA7505600102901 /* Assets.xcassets */,
 				A4BEBC0C2BA7505600102901 /* LaunchScreen.storyboard */,
+				A4DE95902BFD4187009F87E1 /* BedNode.swift */,
+				A4DE95922BFD44F8009F87E1 /* CatNode.swift */,
 			);
 			path = CatNap;
 			sourceTree = "<group>";
@@ -200,7 +206,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4DE95932BFD44F8009F87E1 /* CatNode.swift in Sources */,
 				A4BEBC042BA7505500102901 /* GameScene.swift in Sources */,
+				A4DE95912BFD4187009F87E1 /* BedNode.swift in Sources */,
 				A4BEBC062BA7505500102901 /* GameViewController.swift in Sources */,
 				A4BEBBFE2BA7505500102901 /* AppDelegate.swift in Sources */,
 			);
