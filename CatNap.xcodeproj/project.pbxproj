@@ -20,6 +20,7 @@
 		A48B63562BFDB75300C330DB /* SKTTimingFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48B63492BFDB75300C330DB /* SKTTimingFunctions.swift */; };
 		A48B63572BFDB75300C330DB /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48B634A2BFDB75300C330DB /* Vector3.swift */; };
 		A48B63592BFDD71E00C330DB /* BlockNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48B63582BFDD71E00C330DB /* BlockNode.swift */; };
+		A48B635B2BFDE94D00C330DB /* MessageNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48B635A2BFDE94D00C330DB /* MessageNode.swift */; };
 		A4BEBBFE2BA7505500102901 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BEBBFD2BA7505500102901 /* AppDelegate.swift */; };
 		A4BEBC002BA7505500102901 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A4BEBBFF2BA7505500102901 /* GameScene.sks */; };
 		A4BEBC022BA7505500102901 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = A4BEBC012BA7505500102901 /* Actions.sks */; };
@@ -54,6 +55,7 @@
 		A48B63492BFDB75300C330DB /* SKTTimingFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTTimingFunctions.swift; sourceTree = "<group>"; };
 		A48B634A2BFDB75300C330DB /* Vector3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector3.swift; sourceTree = "<group>"; };
 		A48B63582BFDD71E00C330DB /* BlockNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockNode.swift; sourceTree = "<group>"; };
+		A48B635A2BFDE94D00C330DB /* MessageNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageNode.swift; sourceTree = "<group>"; };
 		A4BEBBFA2BA7505500102901 /* CatNap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatNap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4BEBBFD2BA7505500102901 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4BEBBFF2BA7505500102901 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				A4DE95902BFD4187009F87E1 /* BedNode.swift */,
 				A4DE95922BFD44F8009F87E1 /* CatNode.swift */,
 				A48B63582BFDD71E00C330DB /* BlockNode.swift */,
+				A48B635A2BFDE94D00C330DB /* MessageNode.swift */,
 			);
 			path = CatNap;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A48B634D2BFDB75300C330DB /* CGPoint+Extensions.swift in Sources */,
+				A48B635B2BFDE94D00C330DB /* MessageNode.swift in Sources */,
 				A48B63552BFDB75300C330DB /* SKTEffects.swift in Sources */,
 				A48B63502BFDB75300C330DB /* SKAction+Extensions.swift in Sources */,
 				A4DE95932BFD44F8009F87E1 /* CatNode.swift in Sources */,

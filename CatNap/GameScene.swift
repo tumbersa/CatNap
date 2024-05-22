@@ -22,12 +22,15 @@ struct PhysicsCategory {
     static let Block: UInt32 = 0b10
     static let Bed: UInt32 = 0b100
     static let Edge: UInt32 = 0b1000
+    static let Label: UInt32 = 0b10000
 }
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
     
     var bedNode: BedNode!
     var catNode: CatNode!
+    
+    var playable = true
     
     override func didMove(to view: SKView) {
         //SKTAudio.sharedInstance().playBackgroundMusic("backgroundMusic.mp3")
@@ -55,13 +58,55 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func didBegin(_ contact: SKPhysicsContact) {
+        if !playable {
+            return
+        }
+        
         let collision = contact.bodyA.categoryBitMask | contact.bodyB.categoryBitMask
         
         if collision == PhysicsCategory.Cat | PhysicsCategory.Bed {
             print("SUCCESS")
+            win()
         } else if collision == PhysicsCategory.Cat | PhysicsCategory.Edge {
             print("FAIL")
+            lose()
         }
     }
     
+    func inGameMessage(text: String) {
+        let message = MessageNode(message: text)
+        message.position = CGPoint(x: frame.midX, y: frame.midY)
+        addChild(message)
+    }
+    
+    func newGame() {
+        let scene = GameScene(fileNamed: "GameScene")
+        scene!.scaleMode = scaleMode
+        view!.presentScene(scene)
+    }
+    
+    func lose() {
+        playable = false
+        SKTAudio.sharedInstance().pauseBackgroundMusic()
+        SKTAudio.sharedInstance().playSoundEffect("lose.mp3")
+        
+        inGameMessage(text: "Try again...")
+        catNode.wakeUp()
+        
+        run(SKAction.afterDelay(5, runBlock: newGame))
+        
+        catNode.wakeUp()
+    }
+    
+    func win() {
+        playable = false
+        
+        SKTAudio.sharedInstance().pauseBackgroundMusic()
+        SKTAudio.sharedInstance().playSoundEffect("win.mp3")
+        
+        inGameMessage(text: "Nice job!")
+        run(SKAction.afterDelay(3, runBlock: newGame))
+        
+        catNode.curlAt(scenePoint: bedNode.position)
+    }
 }
